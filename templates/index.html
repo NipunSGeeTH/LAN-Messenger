@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NS Chat App</title>
+    <script src="{{ url_for('static', filename='scriptsocket.js') }}"></script>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.png') }}">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="fitscreen">
+      <h1 style="
+      margin: 10px" >Chat App</h1>
+      <img
+        src="{{ url_for('static', filename='logo.png') }}"
+        alt="NipunSGeeTH"
+        class="logoimage"
+      />
+
+      <div id="name-form">
+        <input
+          type="text"
+          id="name-input"
+          class="nmin"
+          placeholder="Enter your name to start chat"
+          name="username"
+        />
+
+        <button id="set-name-button" class="">Set Name</button>
+      </div>
+
+      <div class="chetterboxcenter">
+        <div id="chatbox"></div>
+
+        <div id="messages"></div>
+
+        <div id="chattingbox"></div>
+      </div>
+
+
+      
+      <div id="sendbox" class="sendmessage" style="display: none">
+        <input type="text" id="message-input" placeholder="Message" />
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    margin: 0;
+}
+
+/* Logo */
+.logoimage {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+ 
+}
+
+/* Name Form */
+#name-form {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#name-input {
+    width: 250px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#set-name-button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: solid;
+    border-radius: 9px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#set-name-button:hover {
+    background-color: #0056b3;
+}
+
+#set-name-button:active {
+    background-color: #003d80;
+}
+
+/* Messages */
+#messages {
+    height: calc(100vh - 185px);;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    
+   
+    align-self: center;
+    justify-content: center;
+    font-size: larger;
+    background-color: #0f0f0f;
+    margin-bottom: 0px;
+}
+
+/* Media Queries */
+@media (min-width: 0px) and (max-width: 700px) {
+    #messages {
+        width: 100% ;
+    }
+    .chetterboxcenter {
+        justify-content: center;
+        width: 100vw ;
+        margin-left: 0 ;
+    }
+    #message-input {
+        margin-left: 0vw;
+        width: calc(100vw - 100px);
+
+    }
+    .logoimage {
+      
+        width: 50px;
+    }
+
+
+
+
+}
+
+@media (min-width: 701px) and (max-width: 120000px) {
+    #messages {
+        width: 90%;
+    }
+    .chetterboxcenter {
+        justify-content: center;
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    #message-input {
+        margin-left: 5vw;
+        width: calc(80vw - 80px);
+
+    }
+    .logoimage {
+        
+        width: 7%;
+    }
+}
+
+
+/* Message Input and Send Button */
+#message-input {
+    font-size: larger; 
+    /* Dynamically adjusts width with viewport */
+    border: 3px double #000000; /* Simplified border shorthand */
+    height: 40px;
+   
+    border-radius: 5px;
+    background-color: #1bee1b7c; /* Light green with transparency */
+  }
+  
+  #send-button {
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px; 
+    cursor: pointer; /* Shows clickable hand icon */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    text-align: center;
+    display: inline-block; /* Allows for width and height */
+    transition: background-color 0.3s ease; /* Smooth background change on hover */
+    width: 80px;
+  }
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+
+#send-button:active {
+    background-color: #003d80;
+}
+
+/* Messages Styling */
+.message {
+    /* margin: 15px 0;
+    padding: 5px; */
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.message.user {
+    background: linear-gradient(to right, #d67404af, #645f1c00, #06521c00);
+    color: rgb(255, 255, 254);
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+   
+}
+
+.message.system {
+    background: linear-gradient(to right, #af9f0d00, #a202c2b0, #06521c00);
+    color: rgb(214, 213, 230);
+    text-align: center;
+    font-size: 15px;
+    margin: 1px;
+
+}
+
+.message.clientmsg {
+    background: linear-gradient(to right, #ffffff00, #0c2c0c00, #06521c93);
+    color: rgb(255, 255, 255);
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+   
+    margin-right: 20px;
+}
+
+/* Additional Classes */
+.nmin {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    font-size: medium;
+}
+
+h1 {
+    
+  
+
+   
+}
+.fitscreen{
+    background-color: #e9e6f1b0;
+    width: 100vw !important;
+    height: 100vh !important;
+    position:fixed;
+}
+
+/* Send Box */
+#sendbox {
+    display: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    width: 100vw;
+}
